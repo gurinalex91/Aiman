@@ -12,6 +12,15 @@ module.exports = {
         main: ['Plus Jakarta Sans'],
         title: ['Raleway'],
       },
+      keyframes: {
+        ticker: {
+          '0%': { transform: 'translate(0, 0)' },
+          '100%': { transform: 'translate(-130%, 0)' },
+        }
+      },
+      animation: {
+        ticker: 'ticker 15s infinite linear',
+      },
     },
   },
   plugins: [],
