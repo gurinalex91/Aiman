@@ -782,6 +782,10 @@ video {
   background-image: linear-gradient(to left, var(--tw-gradient-stops));
 }
 
+.bg-\[url\(\'\/img\/hand\.png\'\)\]{
+  background-image: url('/img/hand.png');
+}
+
 .from-orange{
   --tw-gradient-from: rgb(243, 205, 6);
   --tw-gradient-to: rgb(243 205 6 / 0);
@@ -817,9 +821,37 @@ video {
   --tw-gradient-to: transparent;
 }
 
+.bg-\[length\:200px_100px\]{
+  background-size: 200px 100px;
+}
+
+.bg-\[length\:900pxx\]{
+  background-size: 900pxx;
+}
+
+.bg-\[length\:900px\]{
+  background-size: 900px;
+}
+
+.bg-\[length\:70\%\]{
+  background-size: 70%;
+}
+
+.bg-\[length\:1500px\]{
+  background-size: 1500px;
+}
+
 .bg-clip-text{
   -webkit-background-clip: text;
           background-clip: text;
+}
+
+.bg-left-bottom{
+  background-position: left bottom;
+}
+
+.bg-no-repeat{
+  background-repeat: no-repeat;
 }
 
 .p-8{
