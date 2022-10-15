@@ -28,5 +28,19 @@ window.addEventListener("DOMContentLoaded", () => {
         });
       }
     });
+
+    //Swiper
+    const swiper = new Swiper('.swiper', {
+      slidesPerView: 5.5,
+      speed: 400,
+      spaceBetween: 0,
+      grabCursor: true,
+      loop: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+    
     
   });

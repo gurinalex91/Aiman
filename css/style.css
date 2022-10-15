@@ -666,6 +666,26 @@ video {
   margin-left: 1.5rem;
 }
 
+.ml-8{
+  margin-left: 2rem;
+}
+
+.mb-4{
+  margin-bottom: 1rem;
+}
+
+.mb-3{
+  margin-bottom: 0.75rem;
+}
+
+.mb-24{
+  margin-bottom: 6rem;
+}
+
+.mb-48{
+  margin-bottom: 12rem;
+}
+
 .flex{
   display: flex;
 }
@@ -704,6 +724,14 @@ video {
 
 .w-1\/2{
   width: 50%;
+}
+
+.w-2\/5{
+  width: 40%;
+}
+
+.w-1\/5{
+  width: 20%;
 }
 
 @-webkit-keyframes ticker{
@@ -796,9 +824,22 @@ video {
   border-width: 1px;
 }
 
+.border-l{
+  border-left-width: 1px;
+}
+
+.border-r{
+  border-right-width: 1px;
+}
+
 .border-zinc-500{
   --tw-border-opacity: 1;
   border-color: rgb(113 113 122 / var(--tw-border-opacity));
+}
+
+.border-zinc-600{
+  --tw-border-opacity: 1;
+  border-color: rgb(82 82 91 / var(--tw-border-opacity));
 }
 
 .bg-zinc-900{
@@ -835,8 +876,8 @@ video {
   background-image: url('/img/sphere2.png');
 }
 
-.bg-\[url\(\'\/img\/sphere3\.png\.png\'\)\]{
-  background-image: url('/img/sphere3.png.png');
+.bg-\[url\(\'\/img\/sphere3\.png\'\)\]{
+  background-image: url('/img/sphere3.png');
 }
 
 .bg-\[url\(\'\/img\/sphere4\.png\'\)\]{
@@ -845,10 +886,6 @@ video {
 
 .bg-\[url\(\'\/img\/sphere5\.png\'\)\]{
   background-image: url('/img/sphere5.png');
-}
-
-.bg-\[url\(\'\/img\/sphere3\.png\'\)\]{
-  background-image: url('/img/sphere3.png');
 }
 
 .from-orange{
@@ -945,6 +982,21 @@ video {
   padding-right: 2rem;
 }
 
+.px-10{
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.py-10{
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.py-14{
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
 .pb-\[400px\]{
   padding-bottom: 400px;
 }
@@ -967,6 +1019,18 @@ video {
 
 .pt-40{
   padding-top: 10rem;
+}
+
+.pr-10{
+  padding-right: 2.5rem;
+}
+
+.pr-16{
+  padding-right: 4rem;
+}
+
+.pl-8{
+  padding-left: 2rem;
 }
 
 .text-center{

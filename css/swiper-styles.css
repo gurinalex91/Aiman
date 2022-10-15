@@ -1,0 +1,33 @@
+.swiper{
+    padding: 200px 0;
+    margin-top: -200px;
+}
+.swiper-button-next,
+.swiper-button-prev
+{
+    width: 120px;
+    height: 120px;
+    top: 25px;
+    right: 0;
+    transition: all 0.3s linear;
+}
+.swiper-button-prev{
+    left: auto;
+    right: 120px;
+}
+.swiper-button-prev::after,
+.swiper-button-next::after{
+    content: '';
+}
+.swiper-button-prev{
+    background: url(../img/arrows/arrow-left-white.svg) center / cover;
+}
+.swiper-button-next{
+    background: url(../img/arrows/arrow-right-white.svg) center / cover;
+}
+.swiper-button-prev:hover{
+    background: #ffffff url(../img/arrows/arrow-left-black.svg) center / cover;
+}
+.swiper-button-next:hover{
+    background: #ffffff url(../img/arrows/arrow-right-black.svg) center / cover;
+}
