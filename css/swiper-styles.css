@@ -1,0 +1,49 @@
+.swiper-support {
+  padding: 200px 0;
+  margin-top: -200px;
+}
+.swiper-support .swiper-button-next,
+.swiper-support .swiper-button-prev {
+  width: 120px;
+  height: 120px;
+  top: 25px;
+  right: 0;
+  transition: all 0.3s linear;
+}
+.swiper-support .swiper-button-prev {
+  left: auto;
+  right: 120px;
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content: "";
+}
+.swiper-button-prev {
+  background: url(../img/arrows/arrow-left-white.svg) center / cover;
+}
+.swiper-button-next {
+  background: url(../img/arrows/arrow-right-white.svg) center / cover;
+}
+.swiper-support .swiper-button-prev:hover {
+  background: #ffffff url(../img/arrows/arrow-left-black.svg) center / cover;
+}
+.swiper-support .swiper-button-next:hover {
+  background: #ffffff url(../img/arrows/arrow-right-black.svg) center / cover;
+}
+.swiper-reviews{
+    padding-bottom: 70px;
+}
+.swiper-reviews .swiper-button-next,
+.swiper-reviews .swiper-button-prev {
+  width: 140px;
+  height: 140px;
+  top: auto;
+  bottom: 18px;
+  transition: all 0.3s linear;
+}
+.swiper-reviews .swiper-button-next{
+    right: 4rem;
+}
+.swiper-reviews .swiper-button-prev{
+    left: 4rem;
+}
