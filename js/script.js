@@ -30,12 +30,23 @@ window.addEventListener("DOMContentLoaded", () => {
     });
 
     //Swiper
-    const swiper = new Swiper('.swiper', {
+    const swiperSupport = new Swiper('.swiper-support', {
       slidesPerView: 5.5,
       speed: 400,
       spaceBetween: 0,
       grabCursor: true,
       loop: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+    const swiperReviews = new Swiper('.swiper-reviews', {
+      slidesPerView: 1,
+      speed: 400,
+      spaceBetween: 0,
+      grabCursor: true,
+      autoHeight: true,
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
