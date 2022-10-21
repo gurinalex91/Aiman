@@ -5,6 +5,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+    .pause {
+      animation-play-state: paused;
+    }
+ }
+
 .header-link{
     @apply opacity-50 hover:text-green hover:opacity-100 transition-all duration-300;
 }
@@ -19,4 +25,16 @@
 }
 .tab-body__container{
     @apply py-40;
+}
+.img-wrap-top-inner{
+    @apply h-[100px] relative w-1/5 z-0 bg-gradient-to-b from-gray-500 to-zinc-900 rounded-[32px] mx-6 max-w-[215px];
+}
+.img-wrap-top{
+    @apply p-8 rounded-[32px] w-full z-10 bg-gradient-to-b from-zinc-800 to-zinc-900 absolute top-[1px] left-[1px] bottom-[1px] right-[1px] flex flex-col justify-center;
+}
+.img-wrap-bottom-inner{
+    @apply h-[100px] relative w-1/5 z-0 bg-gradient-to-t from-gray-500 to-zinc-900 rounded-[32px] mx-6 max-w-[215px];
+}
+.img-wrap-bottom{
+    @apply p-8 rounded-[32px] w-full z-10 bg-gradient-to-t from-zinc-800 to-zinc-900 absolute top-[1px] left-[1px] bottom-[1px] right-[1px] flex flex-col justify-center;
 }

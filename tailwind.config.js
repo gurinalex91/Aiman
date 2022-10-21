@@ -16,10 +16,20 @@ module.exports = {
         ticker: {
           '0%': { transform: 'translate(0, 0)' },
           '100%': { transform: 'translate(-130%, 0)' },
+        },
+        marquee: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-50%)' },
+        },
+        marqueeRight: {
+          '0%': { transform: 'translateX(-50%)' },
+          '100%': { transform: 'translateX(0%)' },
         }
       },
       animation: {
         ticker: 'ticker 15s infinite linear',
+        marquee: 'marquee 15s infinite linear',
+        marqueeRight: 'marqueeRight 15s infinite linear',
       },
     },
   },
