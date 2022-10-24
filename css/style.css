@@ -768,6 +768,31 @@ video {
   max-width: 100%;
 }
 
+@-webkit-keyframes fadeIn{
+  0%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn{
+  0%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
+
+.animate-fadeIn{
+  -webkit-animation: fadeIn 1s ease-in;
+          animation: fadeIn 1s ease-in;
+}
+
 @-webkit-keyframes ticker{
   0%{
     transform: translate(0, 0);
@@ -849,10 +874,6 @@ video {
 
 .flex-wrap{
   flex-wrap: wrap;
-}
-
-.items-end{
-  align-items: flex-end;
 }
 
 .items-center{
@@ -1241,10 +1262,6 @@ video {
   opacity: 0.5;
 }
 
-.opacity-100{
-  opacity: 1;
-}
-
 .drop-shadow-md{
   --tw-drop-shadow: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
@@ -1407,6 +1424,30 @@ video {
   opacity: 1;
 }
 
+.element-animation{
+  --tw-translate-y: 100%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  opacity: 0;
+}
+
+.element-show{
+  --tw-translate-y: 0px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  opacity: 1;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 700ms;
+}
+
+.animateH1{
+  display: inline-block;
+  transform-origin: left;
+  --tw-translate-y: 1.25rem;
+  --tw-rotate: 90deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  opacity: 0;
+}
+
 .before\:absolute::before{
   content: var(--tw-content);
   position: absolute;
@@ -1459,10 +1500,6 @@ video {
 .hover\:underline:hover{
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
-}
-
-.hover\:opacity-100:hover{
-  opacity: 1;
 }
 
 .hover\:pause:hover {
