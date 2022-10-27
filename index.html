@@ -24,8 +24,22 @@
             >MAN</a
           >
         </div>
-        <nav>
-          <ul class="menu flex justify-between gap-x-16">
+        <!-- burger-menu -->
+        <div class="lg:hidden">
+          <button class="navbar-burger flex items-center text-white p-3">
+            <svg
+              class="block h-4 w-4 fill-current"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+            </svg>
+          </button>
+        </div>
+        <nav class="">
+          <ul
+            class="menu hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:-translate-y-0 lg:-translate-x-0 lg:static lg:flex lg:justify-between lg:gap-x-16"
+          >
             <li>
               <a href="#" class="header-link">PRODUCTS</a>
             </li>
@@ -43,7 +57,7 @@
             </li>
           </ul>
         </nav>
-        <div class=" ">
+        <div class="hidden lg:block">
           <a
             href="#"
             class="flex items-center hover:underline transition-all duration-300 font-title"
@@ -63,6 +77,74 @@
               />
             </svg>
           </a>
+        </div>
+        <!-- mobile menu -->
+        <div class="navbar-menu relative z-50 hidden">
+          <div
+            class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"
+          ></div>
+          <nav
+            class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-zinc-900 border-r overflow-y-auto"
+          >
+            <div class="flex items-center mb-8 justify-end w-full">
+              <button class="navbar-close">
+                <svg
+                  class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M6 18L18 6M6 6l12 12"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+            <div>
+              <ul class="uppercase flex flex-col gap-3 items-center">
+                <li>
+                  <a href="#" class="header-link">PRODUCTS</a>
+                </li>
+                <li>
+                  <a href="#" class="header-link">SOLUTIONS</a>
+                </li>
+                <li>
+                  <a href="#" class="header-link">CUSTOMER</a>
+                </li>
+                <li>
+                  <a href="#" class="header-link">PRICING</a>
+                </li>
+                <li>
+                  <a href="#" class="header-link">RESOURCES</a>
+                </li>
+              </ul>
+            </div>
+            <div class="mt-auto mx-auto">
+              <a
+                href="#"
+                class="flex items-center hover:underline transition-all duration-300 font-title"
+                >REGISTER NOW
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-4 h-4"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"
+                  />
+                </svg>
+              </a>
+            </div>
+          </nav>
         </div>
       </div>
     </header>
@@ -130,7 +212,7 @@
           <img
             src="img/plumb.png"
             alt="plumb"
-            class="absolute bottom-0 left-1/3"
+            class="animation__img absolute bottom-0 left-1/3"
           />
         </div>
         <div
