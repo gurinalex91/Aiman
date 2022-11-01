@@ -683,6 +683,11 @@ video {
   margin-right: 1.5rem;
 }
 
+.mx-4{
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
 .ml-auto{
   margin-left: auto;
 }
@@ -1218,11 +1223,6 @@ video {
   line-height: 2.25rem;
 }
 
-.text-sm{
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
-
 .font-bold{
   font-weight: 700;
 }
@@ -1253,6 +1253,10 @@ video {
 
 .leading-8{
   line-height: 2rem;
+}
+
+.leading-10{
+  line-height: 2.5rem;
 }
 
 .text-white{
@@ -1586,12 +1590,25 @@ video {
     width: auto;
   }
 
+  .sm\:w-4{
+    width: 1rem;
+  }
+
+  .sm\:flex-row{
+    flex-direction: row;
+  }
+
   .sm\:items-center{
     align-items: center;
   }
 
   .sm\:justify-between{
     justify-content: space-between;
+  }
+
+  .sm\:px-16{
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 
   .sm\:text-left{
@@ -1619,6 +1636,10 @@ video {
 
   .md\:w-1\/2{
     width: 50%;
+  }
+
+  .md\:w-8{
+    width: 2rem;
   }
 
   @-webkit-keyframes ticker{
@@ -1692,6 +1713,13 @@ video {
     line-height: 2.5rem;
   }
 
+  .md\:line-clamp-4{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+  }
+
   .md\:before\:top-0::before{
     content: var(--tw-content);
     top: 0px;
@@ -1716,6 +1744,11 @@ video {
 @media (min-width: 1024px){
   .lg\:static{
     position: static;
+  }
+
+  .lg\:mx-9{
+    margin-left: 2.25rem;
+    margin-right: 2.25rem;
   }
 
   .lg\:mb-0{
@@ -1784,6 +1817,10 @@ video {
 
   .lg\:w-1\/5{
     width: 20%;
+  }
+
+  .lg\:w-16{
+    width: 4rem;
   }
 
   .lg\:-translate-y-0{
@@ -1873,6 +1910,19 @@ video {
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
+
+  .lg\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .lg\:leading-loose{
+    line-height: 2;
+  }
+
+  .lg\:leading-10{
+    line-height: 2.5rem;
+  }
 }
 
 @media (min-width: 1280px){
@@ -1882,6 +1932,14 @@ video {
 
   .xl\:mb-20{
     margin-bottom: 5rem;
+  }
+
+  .xl\:mb-24{
+    margin-bottom: 6rem;
+  }
+
+  .xl\:mb-16{
+    margin-bottom: 4rem;
   }
 
   .xl\:block{
@@ -1946,6 +2004,21 @@ video {
     line-height: 1;
   }
 
+  .xl\:text-5xl{
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .xl\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .xl\:text-4xl{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
   .xl\:text-3xl{
     font-size: 1.875rem;
     line-height: 2.25rem;
@@ -1953,6 +2026,10 @@ video {
 
   .xl\:leading-10{
     line-height: 2.5rem;
+  }
+
+  .xl\:leading-loose{
+    line-height: 2;
   }
 }
 
@@ -1973,6 +2050,22 @@ video {
   .\32xl\:text-3xl{
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+
+  .\32xl\:text-5xl{
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .\32xl\:leading-loose{
+    line-height: 2;
+  }
+
+  .\32xl\:line-clamp-4{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
   }
 }
 
