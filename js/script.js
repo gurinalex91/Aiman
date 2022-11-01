@@ -31,7 +31,6 @@ window.addEventListener("DOMContentLoaded", () => {
 
   //Swiper
   const swiperSupport = new Swiper(".swiper-support", {
-    slidesPerView: 5.5,
     speed: 400,
     spaceBetween: 0,
     grabCursor: true,
@@ -40,18 +39,35 @@ window.addEventListener("DOMContentLoaded", () => {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+      },
+      480: {
+        slidesPerView: 2,
+      },
+      640: {
+        slidesPerView: 3,
+      },
+      1024: {
+        slidesPerView: 4,
+      },
+      1280: {
+        slidesPerView: 5.5,
+      },
+    }
   });
-  // const swiperReviews = new Swiper(".swiper-reviews", {
-  //   slidesPerView: 1,
-  //   speed: 400,
-  //   spaceBetween: 0,
-  //   grabCursor: true,
-  //   autoHeight: true,
-  //   navigation: {
-  //     nextEl: ".swiper-button-next",
-  //     prevEl: ".swiper-button-prev",
-  //   },
-  // });
+  const swiperReviews = new Swiper(".swiper-reviews", {
+    slidesPerView: 1,
+    speed: 400,
+    spaceBetween: 0,
+    grabCursor: true,
+    autoHeight: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
 
   //animation
   function onEntry(e) {

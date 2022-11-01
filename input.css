@@ -24,7 +24,7 @@
     @apply font-title font-bold text-3xl md:text-5xl xl:text-7xl;
 }
 .tab-body__container{
-    @apply py-8 lg:py-14;
+    @apply pt-8 lg:pt-14;
 }
 .img-wrap-top-inner{
     @apply h-[100px] relative w-1/5 z-0 bg-gradient-to-b from-gray-500 to-zinc-900 rounded-[32px] mx-6 max-w-[215px];
