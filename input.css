@@ -39,7 +39,7 @@
     @apply p-8 rounded-[32px] w-full z-10 bg-gradient-to-t from-zinc-800 to-zinc-900 absolute top-[1px] left-[1px] bottom-[1px] right-[1px] flex flex-col justify-center;
 }
 .footer-link{
-    @apply text-2xl uppercase hover:text-green hover:opacity-100 transition-all duration-300;
+    @apply text-xl md:text-2xl uppercase hover:text-green hover:opacity-100 transition-all duration-300;
 }
 .element-animation{
     @apply opacity-0 translate-y-full;
