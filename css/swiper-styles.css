@@ -1,18 +1,18 @@
 .swiper-support {
-  padding: 200px 0;
+  padding-top: 150px;
   margin-top: -200px;
 }
 .swiper-support .swiper-button-next,
 .swiper-support .swiper-button-prev {
-  width: 120px;
-  height: 120px;
-  top: 25px;
+  width: 40px;
+  height: 40px;
+  top: 130px;
   right: 0;
   transition: all 0.3s linear;
 }
 .swiper-support .swiper-button-prev {
   left: auto;
-  right: 120px;
+  right: 40px;
 }
 .swiper-button-prev::after,
 .swiper-button-next::after {
@@ -30,20 +30,69 @@
 .swiper-support .swiper-button-next:hover {
   background: #ffffff url(../img/arrows/arrow-right-black.svg) center / cover;
 }
-.swiper-reviews{
-    padding-bottom: 70px;
+.swiper-reviews {
+  padding-bottom: 70px;
 }
 .swiper-reviews .swiper-button-next,
 .swiper-reviews .swiper-button-prev {
-  width: 140px;
-  height: 140px;
+  width: 40px;
+  height: 40px;
   top: auto;
-  bottom: 18px;
+  bottom: 10px;
   transition: all 0.3s linear;
 }
-.swiper-reviews .swiper-button-next{
-    right: 4rem;
+.swiper-reviews .swiper-button-next {
+  right: 1rem;
 }
-.swiper-reviews .swiper-button-prev{
+.swiper-reviews .swiper-button-prev {
+  left: 1rem;
+}
+@media (min-width: 640px) {
+  .swiper-support .swiper-button-next,
+  .swiper-support .swiper-button-prev {
+    width: 80px;
+    height: 80px;
+    top: 60px;
+  }
+  .swiper-support .swiper-button-prev {
+    right: 80px;
+  }
+  .swiper-reviews .swiper-button-next,
+  .swiper-reviews .swiper-button-prev {
+    width: 80px;
+    height: 80px;
+    bottom: 40px;
+  }
+  .swiper-reviews .swiper-button-next {
+    right: 2rem;
+  }
+  .swiper-reviews .swiper-button-prev {
+    left: 2rem;
+  }
+}
+@media (min-width: 1280px) {
+  .swiper-support .swiper-button-next,
+  .swiper-support .swiper-button-prev {
+    width: 120px;
+    height: 120px;
+    top: 25px;
+  }
+  .swiper-support .swiper-button-prev {
+    right: 120px;
+  }
+  .swiper-support {
+    padding-top: 200px;
+  }
+  .swiper-reviews .swiper-button-next,
+  .swiper-reviews .swiper-button-prev {
+    width: 140px;
+    height: 140px;
+    bottom: 18px;
+  }
+  .swiper-reviews .swiper-button-next {
+    right: 4rem;
+  }
+  .swiper-reviews .swiper-button-prev {
     left: 4rem;
+  }
 }
