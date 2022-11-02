@@ -1514,6 +1514,11 @@ video {
   background-image: url('/img/discount.svg');
 }
 
+.before\:bg-\[url\(\'\.\.\/img\/discount\.svg\'\)\]::before{
+  content: var(--tw-content);
+  background-image: url('../img/discount.svg');
+}
+
 .before\:bg-cover::before{
   content: var(--tw-content);
   background-size: cover;
