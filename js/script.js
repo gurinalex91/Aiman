@@ -55,7 +55,7 @@ window.addEventListener("DOMContentLoaded", () => {
       1280: {
         slidesPerView: 5.5,
       },
-    }
+    },
   });
   const swiperReviews = new Swiper(".swiper-reviews", {
     slidesPerView: 1,
@@ -122,4 +122,25 @@ window.addEventListener("DOMContentLoaded", () => {
       });
     }
   }
+
+  //counters
+  const counters = document.querySelectorAll(".counter");
+  const speed = 2000;
+
+  counters.forEach((counter) => {
+    const animate = () => {
+      const value = +counter.getAttribute("to-number");
+      const data = +counter.innerText;
+
+      const time = value / speed;
+      if (data < value) {
+        counter.innerText = Math.ceil(data + time);
+        setTimeout(animate, 1);
+      } else {
+        counter.innerText = value;
+      }
+    };
+
+    animate();
+  });
 });
