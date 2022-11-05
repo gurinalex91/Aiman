@@ -125,17 +125,17 @@ window.addEventListener("DOMContentLoaded", () => {
 
   //counters
   const counters = document.querySelectorAll(".counter");
-  const speed = 2000;
+  const speed = 200;
 
   counters.forEach((counter) => {
     const animate = () => {
-      const value = +counter.getAttribute("to-number");
+      const value = +counter.getAttribute("data-target");
       const data = +counter.innerText;
 
       const time = value / speed;
       if (data < value) {
         counter.innerText = Math.ceil(data + time);
-        setTimeout(animate, 1);
+        setTimeout(animate, 10);
       } else {
         counter.innerText = value;
       }
