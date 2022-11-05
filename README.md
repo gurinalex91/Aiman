@@ -7,3 +7,5 @@ design https://www.figma.com/file/FRpiJL9Lq22SpPEnz44kGf/AI.MAN(copy)?node-id=1%
 
 to start project:
 npm run start
+
+Deploy: https://gurinalex91.github.io/Aiman/
