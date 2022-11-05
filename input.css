@@ -50,4 +50,13 @@
 .element-show{
     @apply opacity-100 transition-all duration-700 translate-y-0;
 }
+.development-section__item{
+    @apply sm:flex sm:items-center lg:justify-between gap-4 lg:gap-0 w-full lg:w-2/5;
+}
+.reveal{
+    @apply opacity-0;
+}
+.reveal.active{
+    @apply opacity-100;
+}
 

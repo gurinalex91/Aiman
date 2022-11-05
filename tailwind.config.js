@@ -46,7 +46,7 @@ module.exports = {
         fadeIn: "fadeIn 1s ease-in",
         upDown: "upDown 5s infinite ease-in-out",
         titleFadeIn: "fadeIn 3s ease-in",
-        rotate360: "rotate360 30s infinite linear"
+        rotate360: "rotate360 20s infinite linear",
       },
     },
   },

@@ -35,6 +35,9 @@ window.addEventListener("DOMContentLoaded", () => {
     spaceBetween: 0,
     grabCursor: true,
     loop: true,
+    autoplay: {
+      delay: 4000,
+    },
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
@@ -84,6 +87,57 @@ window.addEventListener("DOMContentLoaded", () => {
     observer.observe(elm);
   }
 
+  //counters
+  const counters = document.querySelectorAll(".counter");
+  const speed = 200;
+
+  counters.forEach((counter) => {
+    const animate = () => {
+      const value = +counter.getAttribute("data-target");
+      const data = +counter.innerText;
+
+      const time = value / speed;
+      if (data < value) {
+        counter.innerText = Math.ceil(data + time);
+        setTimeout(animate, 10);
+      } else {
+        counter.innerText = value;
+      }
+    };
+
+    animate();
+  });
+
+  //spheres
+  const blocks = document.querySelectorAll(".development-section__item");
+  blocks.forEach((item) => {
+    item.addEventListener("mouseover", function () {
+      this.firstElementChild.classList.add("animate-rotate360");
+    });
+    item.addEventListener("mouseout", function () {
+      this.firstElementChild.classList.remove("animate-rotate360");
+    });
+  });
+
+  //footer
+   function reveal() {
+    const reveals = document.querySelectorAll(".reveal");
+  
+    for (let i = 0; i < reveals.length; i++) {
+      const windowHeight = window.innerHeight;
+      const elementTop = reveals[i].getBoundingClientRect().top;
+      const elementVisible = 150;
+  
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add("active");
+      } else {
+        reveals[i].classList.remove("active");
+      }
+    }
+  }
+  
+  window.addEventListener("scroll", reveal);
+
   // Burger menu
   // open
   const burger = document.querySelectorAll(".navbar-burger");
@@ -122,25 +176,4 @@ window.addEventListener("DOMContentLoaded", () => {
       });
     }
   }
-
-  //counters
-  const counters = document.querySelectorAll(".counter");
-  const speed = 200;
-
-  counters.forEach((counter) => {
-    const animate = () => {
-      const value = +counter.getAttribute("data-target");
-      const data = +counter.innerText;
-
-      const time = value / speed;
-      if (data < value) {
-        counter.innerText = Math.ceil(data + time);
-        setTimeout(animate, 10);
-      } else {
-        counter.innerText = value;
-      }
-    };
-
-    animate();
-  });
 });
