@@ -29,12 +29,19 @@ module.exports = {
           "0%": { opacity: 0 },
           "100%": { opacity: 1 },
         },
+        upDown: {
+          "0%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(10%)" },
+          "100%": { transform: "translateY(0)" },
+        },
       },
       animation: {
         ticker: "ticker 15s infinite linear",
         marquee: "marquee 15s infinite linear",
         marqueeRight: "marqueeRight 15s infinite linear",
         fadeIn: "fadeIn 1s ease-in",
+        upDown: "upDown 5s infinite ease-in-out",
+        titleFadeIn: "fadeIn 3s ease-in"
       },
     },
   },

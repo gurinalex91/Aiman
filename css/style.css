@@ -853,6 +853,54 @@ video {
           animation: fadeIn 1s ease-in;
 }
 
+@keyframes fadeIn{
+  0%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
+
+.animate-titleFadeIn{
+  -webkit-animation: fadeIn 3s ease-in;
+          animation: fadeIn 3s ease-in;
+}
+
+@-webkit-keyframes upDown{
+  0%{
+    transform: translateY(0);
+  }
+
+  50%{
+    transform: translateY(10%);
+  }
+
+  100%{
+    transform: translateY(0);
+  }
+}
+
+@keyframes upDown{
+  0%{
+    transform: translateY(0);
+  }
+
+  50%{
+    transform: translateY(10%);
+  }
+
+  100%{
+    transform: translateY(0);
+  }
+}
+
+.animate-upDown{
+  -webkit-animation: upDown 5s infinite ease-in-out;
+          animation: upDown 5s infinite ease-in-out;
+}
+
 @-webkit-keyframes marquee{
   0%{
     transform: translateX(0);
@@ -1593,11 +1641,6 @@ video {
   background-repeat: no-repeat;
 }
 
-.before\:opacity-50::before{
-  content: var(--tw-content);
-  opacity: 0.5;
-}
-
 .before\:opacity-0::before{
   content: var(--tw-content);
   opacity: 0;
@@ -1656,10 +1699,6 @@ video {
 .hover\:underline:hover{
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
-}
-
-.hover\:opacity-100:hover{
-  opacity: 1;
 }
 
 .hover\:shadow-\[0_0_10px\]:hover{
