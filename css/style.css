@@ -901,6 +901,31 @@ video {
           animation: upDown 5s infinite ease-in-out;
 }
 
+@-webkit-keyframes rotate360{
+  0%{
+    transform: rotate(0);
+  }
+
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate360{
+  0%{
+    transform: rotate(0);
+  }
+
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+.animate-rotate360{
+  -webkit-animation: rotate360 30s infinite linear;
+          animation: rotate360 30s infinite linear;
+}
+
 @-webkit-keyframes marquee{
   0%{
     transform: translateX(0);

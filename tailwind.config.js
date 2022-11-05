@@ -34,6 +34,10 @@ module.exports = {
           "50%": { transform: "translateY(10%)" },
           "100%": { transform: "translateY(0)" },
         },
+        rotate360: {
+          "0%": { transform: "rotate(0)" },
+          "100%": { transform: "rotate(360deg)" },
+        },
       },
       animation: {
         ticker: "ticker 15s infinite linear",
@@ -41,7 +45,8 @@ module.exports = {
         marqueeRight: "marqueeRight 15s infinite linear",
         fadeIn: "fadeIn 1s ease-in",
         upDown: "upDown 5s infinite ease-in-out",
-        titleFadeIn: "fadeIn 3s ease-in"
+        titleFadeIn: "fadeIn 3s ease-in",
+        rotate360: "rotate360 30s infinite linear"
       },
     },
   },
