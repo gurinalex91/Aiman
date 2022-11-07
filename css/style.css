@@ -2120,6 +2120,10 @@ video {
     text-align: left;
   }
 
+  .lg\:text-justify{
+    text-align: justify;
+  }
+
   .lg\:text-7xl{
     font-size: 4.5rem;
     line-height: 1;
