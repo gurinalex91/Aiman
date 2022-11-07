@@ -13,10 +13,6 @@ module.exports = {
         title: ["Raleway"],
       },
       keyframes: {
-        ticker: {
-          "0%": { transform: "translateX(0)" },
-          "100%": { transform: "translateX(-80%)" },
-        },
         marquee: {
           "0%": { transform: "translateX(0)" },
           "100%": { transform: "translateX(-50%)" },
@@ -40,7 +36,6 @@ module.exports = {
         },
       },
       animation: {
-        ticker: "ticker 15s infinite linear",
         marquee: "marquee 15s infinite linear",
         marqueeRight: "marqueeRight 15s infinite linear",
         fadeIn: "fadeIn 1s ease-in",
