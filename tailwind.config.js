@@ -14,8 +14,8 @@ module.exports = {
       },
       keyframes: {
         ticker: {
-          "0%": { transform: "translate(0, 0)" },
-          "100%": { transform: "translate(-130%, 0)" },
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-80%)" },
         },
         marquee: {
           "0%": { transform: "translateX(0)" },
