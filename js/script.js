@@ -120,14 +120,14 @@ window.addEventListener("DOMContentLoaded", () => {
   });
 
   //footer
-   function reveal() {
+  function reveal() {
     const reveals = document.querySelectorAll(".reveal");
-  
+
     for (let i = 0; i < reveals.length; i++) {
       const windowHeight = window.innerHeight;
       const elementTop = reveals[i].getBoundingClientRect().top;
       const elementVisible = 150;
-  
+
       if (elementTop < windowHeight - elementVisible) {
         reveals[i].classList.add("active");
       } else {
@@ -135,19 +135,21 @@ window.addEventListener("DOMContentLoaded", () => {
       }
     }
   }
-  
+
   window.addEventListener("scroll", reveal);
 
   // Burger menu
   // open
-  const burger = document.querySelectorAll(".navbar-burger");
-  const menu = document.querySelectorAll(".navbar-menu");
+  const burger = document.querySelectorAll(".navbar-burger"),
+    menu = document.querySelectorAll(".navbar-menu"),
+    body = document.querySelector("body");
 
   if (burger.length && menu.length) {
     for (let i = 0; i < burger.length; i++) {
       burger[i].addEventListener("click", function () {
         for (let j = 0; j < menu.length; j++) {
           menu[j].classList.toggle("hidden");
+          body.style.cssText = "overflow: hidden;";
         }
       });
     }
@@ -162,6 +164,7 @@ window.addEventListener("DOMContentLoaded", () => {
       close[i].addEventListener("click", function () {
         for (let j = 0; j < menu.length; j++) {
           menu[j].classList.toggle("hidden");
+          body.style.cssText = "overflow: visible;";
         }
       });
     }
@@ -172,6 +175,7 @@ window.addEventListener("DOMContentLoaded", () => {
       backdrop[i].addEventListener("click", function () {
         for (let j = 0; j < menu.length; j++) {
           menu[j].classList.toggle("hidden");
+          body.style.cssText = "overflow: visible;";
         }
       });
     }
